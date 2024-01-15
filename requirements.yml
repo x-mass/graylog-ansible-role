@@ -1,8 +1,7 @@
 ---
-- role: lean_delivery.java
-  version: 7.1.0
+roles:
+  - name: geerlingguy.java
+    version: 2.3.2
 
-- name: "elastic.elasticsearch"
-  src: "https://github.com/elastic/ansible-elasticsearch.git"
-  scm: git
-  version: main
+  - name: geerlingguy.elasticsearch
+    version: 5.1.1

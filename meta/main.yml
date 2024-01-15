@@ -1,14 +1,12 @@
 ---
 
 dependencies:
-  - role: lean_delivery.java
-    version: 7.1.0
+  - role: geerlingguy.java
+    version: 2.3.2
     when: graylog_install_java
 
-  - role: "elastic.elasticsearch"
-    src: https://github.com/elastic/ansible-elasticsearch.git
-    version: main
-    scm: git
+  - role: geerlingguy.elasticsearch
+    version: 5.1.1
     when: graylog_install_elasticsearch
 
 galaxy_info:
